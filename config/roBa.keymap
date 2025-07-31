@@ -189,7 +189,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans  &trans  &trans  &kp MINUS  &kp PLUS  &kp EQUAL      &trans   &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN K_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         SIMBOL {
