@@ -152,6 +152,8 @@
 &trans  &trans  &trans  &trans     &trans    &kp F11      &kp F12  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &kp MINUS  &kp PLUS  &trans       &trans   &trans                          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         SIMBOL {
