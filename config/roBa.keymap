@@ -196,6 +196,8 @@ sensor-bindings = <&scroll_up_down>;
 &trans       &trans         &trans  &trans             &trans        &trans      &trans    &trans       &trans          &trans          &trans           &trans
 &trans       &trans         &trans  &trans             &trans        &trans      &mkp MB5  &mkp MB4                                                      &kp DELETE
             >;
+
+            sensor-bindings = <&inc_dec_kp LS(LEFT_ARROW) LS(RIGHT_ARROW)>;
         };
     };
 };
