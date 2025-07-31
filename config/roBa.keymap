@@ -153,5 +153,14 @@
 &trans  &trans  &trans  &kp MINUS  &kp PLUS  &trans       &trans   &trans                          &trans
             >;
         };
+
+        layer_8 {
+            bindings = <
+&trans           &trans       &trans    &trans      &trans                           &trans  &trans  &trans    &trans    &trans
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp Y       &kp U   &kp O   &kp P   &kp LBKT  &kp RBKT  &trans
+&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans  &trans  &trans    &trans    &trans
+&trans           &trans       &trans    &trans      &trans       &trans      &trans  &trans                              &trans
+            >;
+        };
     };
 };
