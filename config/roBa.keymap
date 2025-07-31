@@ -170,10 +170,10 @@
 
         MACRO-ARROW {
             bindings = <
-&kp ESCAPE  &trans         &trans  &kp LG(R)          &trans                              &trans    &kp LC(Y)       &kp UP_ARROW    &kp LC(Z)        &trans
-&trans      &kp LS(LG(S))  &trans  &kp LS(LA(MINUS))  &kp LA(PLUS)  &trans      &trans    &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans      &trans         &trans  &trans             &trans        &trans      &trans    &trans    &trans          &trans          &trans           &trans
-&trans      &trans         &trans  &trans             &trans        &trans      &mkp MB5  &mkp MB4                                                   &kp DELETE
+&kp ESCAPE   &trans         &trans  &kp LG(R)          &trans                              &kp LG(TAB)  &kp LC(Y)       &kp UP_ARROW    &kp LC(Z)        &trans
+&kp LA(TAB)  &kp LS(LG(S))  &trans  &kp LS(LA(MINUS))  &kp LA(PLUS)  &trans      &trans    &kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&trans       &trans         &trans  &trans             &trans        &trans      &trans    &trans       &trans          &trans          &trans           &trans
+&trans       &trans         &trans  &trans             &trans        &trans      &mkp MB5  &mkp MB4                                                      &kp DELETE
             >;
         };
     };
