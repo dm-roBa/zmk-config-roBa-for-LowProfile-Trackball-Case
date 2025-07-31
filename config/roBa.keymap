@@ -88,8 +88,15 @@ sensor-bindings = <&scroll_up_down>;
         ps1: ps1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(R) &kp L &kp V &kp D &kp N0 &kp N3 &kp N2 &kp N1>;
+            bindings = <&kp LS(R) &kp L &kp V &kp D &kp N0 &kp N3 &kp N2 &kp N1>;
             label = "TEST";
+        };
+
+        ps2: ps2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(R) &kp L &kp V &kp D &kp N0 &kp N3 &kp N2 &kp N2>;
+            label = "PS2";
         };
     };
 
@@ -187,7 +194,7 @@ sensor-bindings = <&scroll_up_down>;
 
         SIMBOL {
             bindings = <
-&ps1             &trans       &trans    &trans      &trans                              &kp GRAVE      &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
+&ps1             &ps2         &trans    &trans      &trans                              &kp GRAVE      &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp Y       &kp CARET  &kp CARET      &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &trans           &trans       &trans    &trans      &trans       &trans      &trans     &kp BACKSLASH  &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE       &trans
 &trans           &trans       &trans    &trans      &trans       &trans      &trans     &trans                                                                &trans
