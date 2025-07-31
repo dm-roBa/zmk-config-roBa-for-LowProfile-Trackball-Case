@@ -91,6 +91,20 @@
             bindings = <&kp LS(R) &kp L &kp V &kp D &kp N0 &kp N3 &kp N2 &kp N2>;
             label = "PS2";
         };
+
+        ps3: ps3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(R) &kp L &kp V &kp D &kp N0 &kp N3 &kp N2 &kp N3>;
+            label = "PS3";
+        };
+
+        ps4: ps4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp R &kp L &kp V &kp D &kp N0 &kp N3 &kp N2 &kp N2>;
+            label = "PS4";
+        };
     };
 
     behaviors {
@@ -187,7 +201,7 @@
 
         SIMBOL {
             bindings = <
-&ps1             &ps2         &trans    &trans      &trans                              &kp GRAVE      &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
+&ps1             &ps2         &ps3      &ps4        &trans                              &kp GRAVE      &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp Y       &kp CARET  &kp CARET      &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &trans           &trans       &trans    &trans      &trans       &trans      &trans     &kp BACKSLASH  &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE       &trans
 &trans           &trans       &trans    &trans      &trans       &trans      &trans     &trans                                                                &trans
