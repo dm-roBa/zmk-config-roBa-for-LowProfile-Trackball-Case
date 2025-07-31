@@ -200,7 +200,7 @@ sensor-bindings = <&scroll_up_down>;
 &trans           &trans       &trans    &trans      &trans       &trans      &trans     &trans                                                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>;
+            sensor-bindings = <&inc_dec_kp LS(LEFT) LS(RIGHT)>;
         };
 
         MACRO-ARROW {
