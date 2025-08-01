@@ -123,13 +123,24 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                       &kp T                                            &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp Q             &kp W         &kp E         &kp R                       &kp T                                            &kp Y        &kp U  &lt 6 I    &kp O    &kp P
 &mt LCTRL A       &kp S         &kp D         &kp F                       &kp G        &kp LS(LG(S))        &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                       &kp B        &kp TAB              &kp SQT        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 9 LA(GRAVE)  &lt 2 SPACE  &lt 8 LA(GRAVE)      &kp BACKSPACE  &lt 7 ENTER                             &lt 6 DELETE
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 9 LA(GRAVE)  &lt 3 SPACE  &lt 8 LA(GRAVE)      &kp BACKSPACE  &lt 1 ENTER                             &lt 7 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+        };
+
+        NUMFUNCTION {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4     &kp F5                            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&kp N1  &kp N2  &kp N3  &kp N4     &kp N5    &trans         &trans   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+&trans  &trans  &trans  &trans     &trans    &kp F11        &kp F12  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp MINUS  &kp PLUS  &kp EQUAL      &trans   &trans                          &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         FUNCTION {
@@ -188,17 +199,6 @@
             >;
         };
 
-        NUMFUNCTION {
-            bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4     &kp F5                            &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&kp N1  &kp N2  &kp N3  &kp N4     &kp N5    &trans         &trans   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-&trans  &trans  &trans  &trans     &trans    &kp F11        &kp F12  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp MINUS  &kp PLUS  &kp EQUAL      &trans   &trans                          &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
-        };
-
         SIMBOL {
             bindings = <
 &ps1             &ps2         &ps3      &ps4        &trans                              &kp GRAVE      &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
@@ -212,10 +212,10 @@
 
         MACRO-ARROW {
             bindings = <
-&kp ESCAPE   &trans         &trans  &kp LG(R)          &trans                              &kp LG(TAB)  &kp LC(Y)       &kp UP_ARROW    &kp LC(Z)        &trans
-&kp LA(TAB)  &kp LS(LG(S))  &trans  &kp LS(LA(MINUS))  &kp LA(PLUS)  &trans      &trans    &kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans       &trans         &trans  &trans             &trans        &trans      &trans    &trans       &trans          &trans          &trans           &trans
-&trans       &trans         &trans  &trans             &trans        &trans      &mkp MB5  &mkp MB4                                                      &kp DELETE
+&kp ESCAPE  &trans         &trans  &kp LG(R)          &trans                              &kp LG(TAB)  &kp LC(Y)       &kp UP_ARROW    &kp LC(Z)        &trans
+&kp TAB     &kp LS(LG(S))  &trans  &kp LS(LA(MINUS))  &kp LA(PLUS)  &trans      &trans    &kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&trans      &trans         &trans  &trans             &trans        &trans      &trans    &trans       &trans          &trans          &trans           &trans
+&trans      &trans         &trans  &trans             &trans        &trans      &mkp MB5  &mkp MB4                                                      &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp LS(LEFT_ARROW) LS(RIGHT_ARROW)>;
