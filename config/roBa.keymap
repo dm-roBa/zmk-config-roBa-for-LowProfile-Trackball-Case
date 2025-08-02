@@ -99,7 +99,7 @@
         ctrl_d: ctrl_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(END) &kp BACKSPACE>;
+            bindings = <&kp LS(END) &kp LC(X)>;
             label = "CTRL_D";
         };
     };
