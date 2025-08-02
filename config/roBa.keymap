@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // #includeのあとのあたりにスクロール量を変更
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
@@ -111,6 +112,7 @@
             label = "SENSOR_SCROLL_MOUSE";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             tap-ms = <20>;
         };
 
@@ -119,9 +121,9 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
-        
     };
 
     keymap {
@@ -136,6 +138,7 @@
             >;
 
             // sensor-bindings = <&sensor_scroll_mouse>;
+
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
@@ -230,10 +233,10 @@
 
         EMACS {
             bindings = <
-&trans  &trans  &trans  &trans     &kp LC(C)                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp RIGHT  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans      &trans  &trans                          &trans
+&kp DEL  &kp P   &trans  &trans     &kp LC(C)                      &trans  &trans  &trans  &trans  &kp P
+&trans   &trans  &kp P   &kp RIGHT  &trans     &trans      &trans  &trans  &trans  &kp P   &trans  &trans
+&trans   &trans  &trans  &trans     &kp LEFT   &trans      &trans  &kp P   &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans     &trans     &trans      &trans  &trans                          &trans
             >;
         };
     };
