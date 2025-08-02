@@ -116,6 +116,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        sensor_scroll_mouse: sensor_scroll_mouse {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SENSOR_SCROLL_MOUSE";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <5>;
+        };
     };
 
     keymap {
@@ -129,7 +138,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 9 LA(GRAVE)  &lt 3 SPACE  &lt 8 LA(GRAVE)      &kp BACKSPACE  &lt 1 ENTER                             &lt 7 DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&sensor_scroll_mouse>;
         };
 
         NUMFUNCTION {
