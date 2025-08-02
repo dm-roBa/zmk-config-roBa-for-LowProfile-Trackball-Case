@@ -233,10 +233,10 @@
 
         EMACS {
             bindings = <
-&kp DEL  &kp P   &trans  &trans     &kp LC(C)                      &trans  &trans  &trans  &trans  &kp P
-&trans   &trans  &kp P   &kp RIGHT  &trans     &trans      &trans  &trans  &trans  &kp P   &trans  &trans
-&trans   &trans  &trans  &trans     &kp LEFT   &trans      &trans  &kp P   &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans     &trans     &trans      &trans  &trans                          &trans
+&kp DEL  &kp P   &trans  &trans     &kp LC(C)                      &kp LC(V)       &trans  &trans  &trans  &kp UP_ARROW
+&trans   &trans  &kp P   &kp RIGHT  &trans     &trans      &trans  &trans          &trans  &kp P   &trans  &trans
+&trans   &trans  &trans  &trans     &kp LEFT   &trans      &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans     &trans     &trans      &trans  &trans                                  &trans
             >;
         };
     };
