@@ -240,10 +240,10 @@
 
         EMACS {
             bindings = <
-&trans  &kp LC(X)  &kp END     &trans     &kp LC(C)                      &kp LC(V)       &trans  &trans   &trans  &kp UP_ARROW
-&trans  &kp HOME   &kp DELETE  &kp RIGHT  &trans     &trans      &trans  &kp BACKSPACE   &trans  &ctrl_d  &trans  &trans
-&trans  &trans     &trans      &trans     &kp LEFT   &trans      &trans  &kp DOWN_ARROW  &trans  &trans   &trans  &trans
-&trans  &trans     &trans      &trans     &trans     &trans      &trans  &trans                                   &trans
+&trans  &kp LC(X)  &kp END     &trans     &kp LC(C)                           &kp LC(V)       &trans  &trans   &trans  &kp UP_ARROW
+&trans  &kp HOME   &kp DELETE  &kp RIGHT  &trans          &trans      &trans  &kp BACKSPACE   &trans  &ctrl_d  &trans  &trans
+&trans  &trans     &trans      &trans     &kp LEFT        &trans      &trans  &kp DOWN_ARROW  &trans  &trans   &trans  &trans
+&trans  &trans     &trans      &trans     &kt LEFT_SHIFT  &trans      &trans  &trans                                   &trans
             >;
         };
     };
