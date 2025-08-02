@@ -95,6 +95,13 @@
             bindings = <&none &kp R &kp L &kp V &kp D &kp N0 &kp N3 &kp N2 &kp N2>;
             label = "PS4";
         };
+
+        ctrl_d: ctrl_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(END) &kp BACKSPACE>;
+            label = "CTRL_D";
+        };
     };
 
     behaviors {
@@ -139,7 +146,7 @@
 
             // sensor-bindings = <&sensor_scroll_mouse>;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&sensor_scroll_mouse>;
         };
 
         FUNCTION {
@@ -233,10 +240,10 @@
 
         EMACS {
             bindings = <
-&trans  &trans    &trans      &trans     &kp LC(C)                      &kp LC(V)       &trans  &trans  &trans  &kp UP_ARROW
-&trans  &kp HOME  &kp DELETE  &kp RIGHT  &trans     &trans      &trans  &kp BACKSPACE   &trans  &kp P   &trans  &trans
-&trans  &trans    &trans      &trans     &kp LEFT   &trans      &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans
-&trans  &trans    &trans      &trans     &trans     &trans      &trans  &trans                                  &trans
+&trans  &trans    &kp END     &trans     &kp LC(C)                      &kp LC(V)       &trans  &trans   &trans  &kp UP_ARROW
+&trans  &kp HOME  &kp DELETE  &kp RIGHT  &trans     &trans      &trans  &kp BACKSPACE   &trans  &ctrl_d  &trans  &trans
+&trans  &trans    &trans      &trans     &kp LEFT   &trans      &trans  &kp DOWN_ARROW  &trans  &trans   &trans  &trans
+&trans  &trans    &trans      &trans     &trans     &trans      &trans  &trans                                   &trans
             >;
         };
     };
