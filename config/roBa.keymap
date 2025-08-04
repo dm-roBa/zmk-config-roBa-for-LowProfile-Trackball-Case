@@ -58,6 +58,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
