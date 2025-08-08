@@ -55,7 +55,7 @@
         };
 
         quote {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp SQT>;
             key-positions = <19 20>;
         };
 
