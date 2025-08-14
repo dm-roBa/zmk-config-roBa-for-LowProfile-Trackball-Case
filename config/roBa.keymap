@@ -14,6 +14,7 @@
 
 &trackball {
     // automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     arrows {
@@ -62,6 +63,11 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <19 18>;
+        };
+
+        hoge {
+            bindings = <&kp A>;
+            key-positions = <20 19 18 8 6>;
         };
     };
 
