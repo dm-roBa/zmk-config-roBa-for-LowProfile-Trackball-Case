@@ -26,9 +26,9 @@
 };
 
 // マウスキー入力後250ms後にAML解除
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 4 250>;
-};
+//&mkp_input_listener {
+//    input-processors = <&zip_temp_layer 4 250>;
+//};
 
 / {
     trackball_listener {
