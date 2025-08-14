@@ -31,12 +31,21 @@
 //};
 
 / {
+    // トラックボール操作後マウスレイヤーに一定時間遷移
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors = <&zip_temp_layer 4 100000>;
     };
+
+    // マウスキー入力後一定時間後、マウスレイヤー解除
+    mkp_listener {
+        compatible = "zmk,input-listener";
+        device = <&mkp>;
+        input-processors = <&zip_temp_layer 4 250>;
+    };
+
 };
 
 &pinctrl {
