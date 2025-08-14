@@ -15,10 +15,19 @@
             ;
 };
 
+// キー入力があったらAMLを解除する機能における除外キー(マウスキー)
 &zip_temp_layer {
-    excluded-positions = <
-        18 // J
-    >;
+    excluded-positions = <20 19 18 8 6>;
+};
+
+// キー入力から一定時間はAMLを発動しない (キー入力中の誤爆防止)
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+};
+
+// マウスキー入力後250ms後にAML解除
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 4 250>;
 };
 
 / {
@@ -26,7 +35,7 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 10000>;
+        input-processors = <&zip_temp_layer 4 100000>;
     };
 };
 
