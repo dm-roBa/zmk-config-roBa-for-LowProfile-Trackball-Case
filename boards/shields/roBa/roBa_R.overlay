@@ -25,13 +25,8 @@
     require-prior-idle-ms = <200>;
 };
 
-// マウスキー入力後250ms後にAML解除
-//&mkp_input_listener {
-//    input-processors = <&zip_temp_layer 4 250>;
-//};
-
 / {
-    // トラックボール操作後マウスレイヤーに一定時間遷移
+    // トラックボール操作後マウスレイヤーに遷移後、一定時間で解除
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
@@ -40,11 +35,11 @@
     };
 
     // マウスキー入力後一定時間後、マウスレイヤー解除
-    mkp_listener {
-        compatible = "zmk,input-listener";
-        device = <&mkp>;
-        input-processors = <&zip_temp_layer 4 250>;
-    };
+    //mkp_listener {
+    //    compatible = "zmk,input-listener";
+    //    device = <&mkp>;
+    //    input-processors = <&zip_temp_layer 4 250>;
+    //};
 
 };
 
