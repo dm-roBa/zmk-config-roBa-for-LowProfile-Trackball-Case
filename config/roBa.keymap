@@ -191,7 +191,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB5  &trans    &mkp MB4  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
@@ -230,8 +230,8 @@
         SIMBOL {
             bindings = <
 &ps1             &ps2         &ps3      &ps4        &trans                              &kp GRAVE      &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp Y       &kp UNDER  &kp CARET      &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans           &trans       &trans    &trans      &trans       &trans      &trans     &kp BACKSLASH  &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE       &trans
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp Y       &kp TILDE  &kp CARET      &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans           &trans       &trans    &trans      &trans       &trans      &kp PIPE   &kp BACKSLASH  &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE       &trans
 &trans           &trans       &trans    &trans      &trans       &trans      &trans     &trans                                                                &trans
             >;
 
