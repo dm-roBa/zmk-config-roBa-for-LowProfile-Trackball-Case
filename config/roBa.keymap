@@ -240,10 +240,10 @@
 
         MACRO-ARROW {
             bindings = <
-&kp ESCAPE  &trans         &trans       &kp LG(R)          &trans                              &kp LG(TAB)  &kp LC(Y)       &kp UP_ARROW    &kp LC(Z)        &trans
-&kp TAB     &kp LS(LG(S))  &kp LS(F12)  &kp LS(LA(MINUS))  &kp LA(PLUS)  &trans      &trans    &kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans      &trans         &trans       &trans             &trans        &trans      &trans    &trans       &trans          &trans          &trans           &trans
-&trans      &trans         &trans       &trans             &trans        &trans      &mkp MB5  &mkp MB4                                                      &kp DELETE
+&kp ESCAPE   &trans         &trans       &kp LG(R)          &trans                              &kp LG(TAB)  &kp LC(Y)       &kp UP_ARROW    &kp LC(Z)        &trans
+&kp LA(TAB)  &kp LS(LG(S))  &kp LS(F12)  &kp LS(LA(MINUS))  &kp LA(PLUS)  &trans      &trans    &kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&trans       &trans         &trans       &trans             &trans        &trans      &trans    &trans       &trans          &trans          &trans           &trans
+&trans       &trans         &trans       &trans             &trans        &trans      &mkp MB5  &mkp MB4                                                      &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp LS(LEFT_ARROW) LS(RIGHT_ARROW)>;
@@ -251,10 +251,10 @@
 
         EMACS {
             bindings = <
-&kp LC(F)  &kp LC(X)  &kp END     &trans     &kp LC(C)                           &kp LC(V)       &trans  &trans   &trans     &kp UP_ARROW
-&trans     &kp LC(S)  &kp DELETE  &kp RIGHT  &kp ESC         &trans      &trans  &kp BACKSPACE   &trans  &ctrl_d  &kp LC(S)  &trans
-&trans     &trans     &trans      &trans     &kp LEFT        &trans      &trans  &kp DOWN_ARROW  &trans  &trans   &trans     &trans
-&trans     &trans     &trans      &trans     &kt LEFT_SHIFT  &trans      &trans  &trans                                      &trans
+&kp LC(F)  &kp LC(X)     &kp END     &trans     &kp LC(C)                           &kp LC(V)       &trans  &trans   &trans     &kp UP_ARROW
+&trans     &kp LC(HOME)  &kp DELETE  &kp RIGHT  &kp ESC         &trans      &trans  &kp BACKSPACE   &trans  &ctrl_d  &kp LC(S)  &trans
+&trans     &trans        &trans      &trans     &kp LEFT        &trans      &trans  &kp DOWN_ARROW  &trans  &trans   &trans     &trans
+&trans     &trans        &trans      &kp LC(S)  &kt LEFT_SHIFT  &trans      &trans  &trans                                      &trans
             >;
         };
 
