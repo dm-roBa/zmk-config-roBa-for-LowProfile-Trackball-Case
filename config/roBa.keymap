@@ -260,10 +260,10 @@
 
         layer_11 {
             bindings = <
-&trans     &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans     &trans  &trans  &trans     &trans                      &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &kp TILDE  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
