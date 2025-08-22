@@ -17,7 +17,7 @@
 
 // キー入力があったらAMLを解除する機能における除外キー(マウスキー)
 &zip_temp_layer {
-    excluded-positions = <20 19 18 8 6>;
+    excluded-positions = <20 19 18>;
 };
 
 // キー入力から一定時間はAMLを発動しない (キー入力中の誤爆防止)
