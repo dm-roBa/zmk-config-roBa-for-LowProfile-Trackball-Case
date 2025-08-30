@@ -247,10 +247,10 @@
 
         MACRO-ARROW {
             bindings = <
-&kp ESCAPE   &trans         &trans       &kp LG(R)               &trans                                  &kp LG(TAB)  &kp LC(Y)       &kp UP_ARROW    &kp LC(Z)        &trans
-&kp LA(TAB)  &kp LS(LG(S))  &kp LS(F12)  &kp LS(LA(DOWN_ARROW))  &kp LA(UP_ARROW)  &trans      &trans    &kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans       &trans         &line_copy   &kp LS(LA(MINUS))       &kp LA(PLUS)      &trans      &trans    &trans       &trans          &trans          &trans           &trans
-&trans       &trans         &trans       &trans                  &trans            &trans      &mkp MB5  &mkp MB4                                                      &kp DELETE
+&kp ESCAPE   &trans         &trans       &kp LG(R)               &trans                                      &kp LG(TAB)  &kp LC(Y)       &kp UP_ARROW    &kp LC(Z)        &trans
+&kp LA(TAB)  &kp LS(LG(S))  &kp LS(F12)  &kp LS(LA(DOWN_ARROW))  &kp LA(LS(UP_ARROW))  &trans      &trans    &kp HOME     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&trans       &trans         &line_copy   &kp LS(LA(MINUS))       &kp LA(LS(KP_PLUS))   &trans      &trans    &trans       &trans          &trans          &trans           &trans
+&trans       &trans         &trans       &trans                  &trans                &trans      &mkp MB5  &mkp MB4                                                      &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp LS(LEFT_ARROW) LS(RIGHT_ARROW)>;
