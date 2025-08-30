@@ -149,10 +149,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                       &kp T                                             &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&lt 10 A          &kp S         &kp D         &kp F                       &kp G      &kp LS(LG(S))        &kp MINUS         &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                       &kp B      &kp TAB              &kp SQT           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 9 LA(GRAVE)  &kp SPACE  &lt 8 LA(GRAVE)      &lt 11 BACKSPACE  &lt 7 ENTER                             &lt 6 DELETE
+&kp Q             &kp W         &kp E         &kp R                       &kp T                                                  &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&lt 10 A          &kp S         &kp D         &kp F                       &kp G      &kp LS(LG(S))             &kp MINUS         &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                       &kp B      &kp TAB                   &kp SQT           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 9 LA(GRAVE)  &kp SPACE  &lt 8 LA(LANGUAGE_5)      &lt 11 BACKSPACE  &lt 7 ENTER                             &lt 6 DELETE
             >;
 
             // sensor-bindings = <&sensor_scroll_mouse>;
@@ -251,10 +251,10 @@
 
         EMACS {
             bindings = <
-&kp LC(F)  &kp LC(X)     &kp END     &trans     &kp LC(C)                           &kp LC(V)       &trans  &kp LC(I)  &trans     &kp UP_ARROW
-&trans     &kp LC(HOME)  &kp DELETE  &kp RIGHT  &kp ESC         &trans      &trans  &kp BACKSPACE   &trans  &ctrl_d    &kp LC(L)  &trans
-&trans     &trans        &trans      &trans     &kp LEFT        &trans      &trans  &kp DOWN_ARROW  &trans  &trans     &trans     &trans
-&trans     &trans        &trans      &kp LC(S)  &kt LEFT_SHIFT  &trans      &trans  &trans                                        &trans
+&kp LC(F)  &kp LC(X)  &kp END     &trans     &kp LC(C)                           &kp LC(V)       &trans  &kp LC(I)  &trans     &kp UP_ARROW
+&trans     &kp HOME   &kp DELETE  &kp RIGHT  &kp ESC         &trans      &trans  &kp BACKSPACE   &trans  &ctrl_d    &kp LC(L)  &trans
+&trans     &trans     &trans      &trans     &kp LEFT        &trans      &trans  &kp DOWN_ARROW  &trans  &trans     &trans     &trans
+&trans     &trans     &trans      &kp LC(S)  &kt LEFT_SHIFT  &trans      &trans  &trans                                        &trans
             >;
         };
 
