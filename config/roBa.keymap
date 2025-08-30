@@ -113,6 +113,13 @@
             bindings = <&kp LS(END) &kp LC(X)>;
             label = "CTRL_D";
         };
+
+        line_copy: line_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp END &kp LS(HOME) &kp LC(C) &kp ESC>;
+            label = "LINE_COPY";
+        };
     };
 
     behaviors {
