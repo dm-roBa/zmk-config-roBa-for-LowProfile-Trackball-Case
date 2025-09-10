@@ -120,6 +120,13 @@
             bindings = <&kp END &kp LS(HOME) &kp LC(C) &kp ESC>;
             label = "LINE_COPY";
         };
+
+        jugyoin: jugyoin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N5 &kp N7 &kp N0 &kp N4 &kp N8 &kp N9>;
+            label = "JUGYOIN";
+        };
     };
 
     behaviors {
@@ -236,7 +243,7 @@
 
         SIMBOL {
             bindings = <
-&ps1             &ps2         &ps3      &ps4        &trans                              &kp GRAVE      &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
+&ps1             &ps2         &ps3      &ps4        &jugyoin                            &kp GRAVE      &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp Y       &kp TILDE  &kp CARET      &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &trans           &trans       &trans    &trans      &trans       &trans      &kp PIPE   &kp BACKSLASH  &trans         &kp LEFT_BRACE    &kp RIGHT_BRACE       &trans
 &trans           &trans       &trans    &trans      &trans       &trans      &trans     &trans                                                                &trans
@@ -259,8 +266,8 @@
         EMACS {
             bindings = <
 &kp LC(F)  &kp LC(X)  &kp END     &trans     &kp LC(C)                           &kp LC(V)       &trans  &kp LC(I)  &trans     &kp UP_ARROW
-&trans     &kp HOME   &kp DELETE  &kp RIGHT  &kp ESC         &trans      &trans  &kp BACKSPACE   &trans  &ctrl_d    &kp LC(L)  &trans
-&trans     &trans     &trans      &trans     &kp LEFT        &trans      &trans  &kp DOWN_ARROW  &trans  &trans     &trans     &trans
+&trans     &kp HOME   &kp DELETE  &kp RIGHT  &kp ESC         &trans      &trans  &kp BACKSPACE   &trans  &ctrl_d    &kp LC(L)  &kp LC(SEMICOLON)
+&trans     &trans     &trans      &trans     &kp LEFT        &trans      &trans  &kp DOWN_ARROW  &trans  &trans     &trans     &kp LC(SLASH)
 &trans     &trans     &trans      &kp LC(S)  &kt LEFT_SHIFT  &trans      &trans  &trans                                        &trans
             >;
         };
