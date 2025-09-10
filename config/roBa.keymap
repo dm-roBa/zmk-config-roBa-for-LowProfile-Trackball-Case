@@ -163,6 +163,13 @@
 
             tap-ms = <20>;
         };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ALT_TAB";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LA(TAB)>, <&kp LA(LS(TAB))>;
+        };
     };
 
     keymap {
@@ -267,7 +274,7 @@
 &trans       &trans         &trans       &trans                  &trans                &trans      &mkp MB5  &mkp MB4                                                      &sleep
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(LEFT_ARROW) LS(RIGHT_ARROW)>;
+            sensor-bindings = <&alt_tab>;
         };
 
         EMACS {
