@@ -275,10 +275,10 @@
 
         EMACS {
             bindings = <
-&kp LC(F)  &kp LC(X)  &kp END     &trans     &kp LC(C)                           &kp LC(V)       &trans  &kp LC(I)  &trans     &kp UP_ARROW
-&trans     &kp HOME   &kp DELETE  &kp RIGHT  &kp ESC         &trans      &trans  &kp BACKSPACE   &trans  &ctrl_d    &kp LC(L)  &kp LC(SEMICOLON)
-&trans     &trans     &trans      &trans     &kp LEFT        &trans      &trans  &kp DOWN_ARROW  &trans  &trans     &trans     &kp LC(SLASH)
-&trans     &trans     &trans      &kp LC(S)  &kt LEFT_SHIFT  &trans      &trans  &trans                                        &trans
+&kp LC(F)  &kp LC(X)  &kp END     &trans     &kp LC(C)                                     &kp LC(V)         &trans  &kp LC(I)  &trans     &kp UP_ARROW
+&trans     &kp HOME   &kp DELETE  &kp RIGHT  &kp ESC         &trans      &trans            &kp BACKSPACE     &trans  &ctrl_d    &kp LC(L)  &kp LC(SEMICOLON)
+&trans     &trans     &trans      &trans     &kp LEFT        &trans      &trans            &kp DOWN_ARROW    &trans  &trans     &trans     &kp LC(SLASH)
+&trans     &trans     &trans      &kp LC(S)  &kt LEFT_SHIFT  &trans      &kp LC(NUMBER_1)  &kp LC(NUMBER_2)                                &trans
             >;
         };
 
